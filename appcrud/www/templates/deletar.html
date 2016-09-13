@@ -1,0 +1,28 @@
+<ion-view title="Deletar" id="page6">
+    <ion-content padding="true" class="has-header">
+		<!--form para atualização da pessoa-->
+		<form id="deletar-form7" class="list">
+            <label class="item item-input" id="deletar-input25">
+                <span class="input-label">Nome</span>
+                <input type="text" placeholder="" ng-disabled="true" ng-model="pessoa.nome">
+            </label>
+            <label class="item item-input" id="deletar-input26">
+                <span class="input-label">Sobrenome</span>
+                <input type="text" placeholder="" ng-disabled="true" ng-model="pessoa.sobreNome">
+            </label>
+            <label class="item item-input" id="deletar-input27">
+                <span class="input-label">Nascimento</span>
+                <input type="text" placeholder="" ng-disabled="true" ng-model="pessoa.dataNascimento">
+            </label>
+            <label class="item item-input" id="deletar-input28">
+                <span class="input-label">E-mail</span>
+                <input type="email" placeholder="" ng-disabled="true" ng-model="pessoa.email">
+            </label>
+            <label class="item item-input" id="deletar-input29" >
+                <span class="input-label">Telefone</span>
+                <input type="tel" placeholder="" ng-disabled="true" ng-model="pessoa.telefone">
+            </label>
+		    <a ng-click="deleta()" id="deletar-button6" class="button button-positive  button-block">Deletar Pessoa</a>
+        </form>
+    </ion-content>
+</ion-view>

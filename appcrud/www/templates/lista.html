@@ -1,0 +1,12 @@
+<ion-view title="Lista" id="page1" >
+    <ion-content padding="true" class="has-header">
+		<!--cria uma lista usando o ng-repeat que vai repetir o codigo para todos os itens da lista-->
+		<ion-list id="lista-list4"  ng-repeat="pessoa in lista">
+            <ion-item class="item-icon-right" id="lista-list-item12" >
+				{{pessoa.nome}} {{pessoa.sobreNome}}
+		        <span ng-click="deletar('{{pessoa._id}}')" class="icon ion-android-delete"></span>
+				<span ng-click="atualizar('{{pessoa._id}}')" style="right: 100px" class="icon ion-android-clipboard"></span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

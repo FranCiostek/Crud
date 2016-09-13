@@ -1,0 +1,29 @@
+<ion-view title="Atualizar" id="page5">
+    <ion-content padding="true" class="has-header">
+		<!--form para atualização da pessoa-->
+        <form id="atualizar-form6" class="list">
+            <label class="item item-input" id="atualizar-input20">
+                <span class="input-label">Nome</span>
+                <input type="text" placeholder="" ng-model="pessoa.nome">
+            </label>
+            <label class="item item-input" id="atualizar-input21">
+                <span class="input-label">Sobrenome</span>
+                <input type="text" placeholder="" ng-model="pessoa.sobreNome">
+            </label>
+            <label class="item item-input" id="atualizar-input22">
+                <span class="input-label">Nascimento</span>
+                <input type="text" placeholder="" ng-model="pessoa.dataNascimento">
+            </label>
+            <label class="item item-input" id="atualizar-input23">
+                <span class="input-label">E-mail</span>
+                <input type="email" placeholder=""  ng-model="pessoa.email">
+            </label>
+            <label class="item item-input" id="atualizar-input24">
+                <span class="input-label">Telefone</span>
+                <input type="tel" placeholder="" ng-model="pessoa.telefone">
+            </label>
+			<!--chama a funcao atualiza() que foi atribuida ao $scope no controller-->
+            <a ng-click="atualiza()" id="atualizar-button5" class="button button-positive  button-block">Atualizar dados</a>
+        </form>
+    </ion-content>
+</ion-view>

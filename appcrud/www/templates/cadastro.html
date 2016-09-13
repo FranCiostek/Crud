@@ -1,0 +1,28 @@
+<ion-view title="Cadastro" id="page4">
+    <ion-content padding="true" class="has-header">
+	<!--form para o cadastro da pessoa-->
+        <form id="cadastro-form5" class="list">
+            <label class="item item-input" id="cadastro-input15">
+                <span class="input-label">Nome</span>
+                <input type="text" placeholder="" ng-model="pessoa.nome">
+            </label>
+            <label class="item item-input" id="cadastro-input16">
+                <span class="input-label">Sobrenome</span>
+                <input type="text" placeholder="" ng-model="pessoa.sobreNome">
+            </label>
+            <label class="item item-input" id="cadastro-input17">
+                <span class="input-label">Nascimento</span>
+                <input type="text" placeholder="" ng-model="pessoa.dataNascimento">
+            </label>
+            <label class="item item-input" id="cadastro-input18">
+                <span class="input-label">E-mail</span>
+                <input type="email" placeholder="" ng-model="pessoa.email">
+            </label>
+            <label class="item item-input" id="cadastro-input19">
+                <span class="input-label">Telefone</span>
+                <input type="tel" placeholder="" ng-model="pessoa.telefone">
+            </label>
+            <a ng-click="cadastra()" id="cadastro-button4" class="button button-positive  button-block">Cadastrar</a>
+        </form>
+    </ion-content>
+</ion-view>
